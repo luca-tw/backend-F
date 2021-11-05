@@ -38,5 +38,5 @@ jobs:
       uses: akhileshns/heroku-deploy@v3.12.12
       with:
         heroku_api_key: ${{ secrets.HEROKU_ACCESS_KEY_ID }}
-        heroku_app_name: "backend-f"
-        heroku_email: "yl3218@gmail.com"
+        heroku_app_name: ${{ secrets.HEROKU_APP_NAME }}
+        heroku_email: ${{ secrets.HEROKU_EMAIL }}
